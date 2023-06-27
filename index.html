@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Push notifications with subscription management - ServiceWorker Cookbook</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="manifest/manifest.webmanifest" rel="manifest">
+  <style>
+    body {
+      font-family: monospace;
+      font-size: 1rem;
+      white-space: pre-wrap;
+    }
+    button#subscriptionButton {
+      width: 200px;
+      font-size: 20px;
+      color: black;
+    }
+    button
+  </style>
+</head>
+<body>
+  <p>This demo shows how to subscribe/unsubscribe to the push notifications.</p>
+  <button id='subscriptionButton' disabled=true>Subscribe</button>
+  <p>To simulate the subscription expiration under Firefox please set the <code>dom.push.userAgentId</code> in about:config to an empty string. (Note: <A href="https://bugzilla.mozilla.org/show_bug.cgi?id=1222428">bug 1222428</a>)</p>
+  <script src="./tools.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
